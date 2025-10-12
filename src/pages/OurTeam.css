@@ -1,0 +1,264 @@
+.ourteam-page {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background: url("src/assets/contact2-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  padding: 4rem 2rem;
+  padding-left: -2rem;
+  min-height: 100vh;
+  margin-top: 4rem;
+  margin-left: -4rem;
+}
+.ourteam-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 175%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1; 
+}    
+
+.team-header {
+  text-align: left;
+  max-width: 1350px;
+  margin: 0 8rem 4rem;
+}
+.team-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.4rem;
+  color: #0c0c0cff;
+  line-height: 1.4;
+}
+
+.intro span {
+    text-decoration: underline yellow;
+  color: #0c0c0cff;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-card {
+  text-align: center;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.role {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: gray;
+  margin-bottom: 0.3rem;
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .team-header h1 {
+    font-size: 2rem;
+  }
+
+  .intro,
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===========================
+   LARGE TABLETS / SMALL LAPTOPS (≤ 1024px)
+   =========================== */
+@media (max-width: 1024px) {
+  .ourteam-page {
+    padding: 3rem 3rem;
+    margin-left: 0;
+    background-attachment: scroll; /* smoother on tablets */
+  }
+
+  .team-header {
+    margin: 0 4rem 3rem;
+  }
+
+  .team-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+
+/* ===========================
+   TABLETS (≤ 768px)
+   =========================== */
+@media (max-width: 768px) {
+  .ourteam-page {
+    padding: 2.5rem 1.5rem;
+    margin-left: 0;
+  }
+
+  .team-header {
+    margin: 0 2rem 2.5rem;
+    text-align: center;
+  }
+
+  .team-header h1 {
+    font-size: 2rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.85rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .team-card {
+    padding: 1rem;
+  }
+
+  .team-image {
+    height: 180px;
+  }
+
+  .team-card h3 {
+    font-size: 1rem;
+  }
+}
+
+
+/* ===========================
+    SMALL PHONES (≤ 480px)
+   =========================== */
+@media (max-width: 480px) {
+  .ourteam-page {
+    padding: 2rem 1rem;
+    margin-top: 14rem;
+  }
+
+  .team-header {
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  .team-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .breadcrumb {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .intro {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-image {
+    height: 160px;
+  }
+
+  .team-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .role {
+    font-size: 0.75rem;
+  }
+}
+
+/* ===========================
+   EXTRA SMALL DEVICES (≤ 360px)
+   =========================== */
+@media (max-width: 360px) {
+  .team-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  .team-image {
+    height: 140px;
+  }
+
+  .team-card h3 {
+    font-size: 0.9rem;
+  }
+}

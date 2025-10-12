@@ -1,0 +1,386 @@
+.pricing-page {
+  font-family: "Roboto", sans-serif;
+  padding: 3rem 6rem;
+ background: url("src/assets/contact2-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  color: #0e0d0dff;
+  margin-top: 4rem;
+}
+.pricing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 135%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1; 
+} 
+
+.pricing-header {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.pricing-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb {
+  color: gray;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 1400px;
+  /* margin: 1rem auto; */
+  margin-top: 1.3rem;
+  font-size: 1.45rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.highlight-link {
+  color: #0a0a0aff;
+  text-decoration: underline yellow;
+  font-weight: bold;
+}
+
+.desc {
+  max-width: 1460px;
+  /* margin: 0.5rem auto; */
+  margin-top: 1rem;
+  color: #464444ff;
+  line-height: 1.4;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+/* CARD STYLING */
+.card {
+  background: #ffffff;
+  padding: 1.1rem;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: #f5b800;
+  transform: translateY(-8px);
+  color: #000;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #333;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s;
+}
+
+.card-border{
+  background: #f1ececff;
+  background-size: fit-content;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bolder;
+  
+}
+.card:hover .card-border {
+    background: #fff;
+}
+
+.card h1 {
+  font-size: 2.5rem;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.card h1 span {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.card p {
+  margin-top: 1rem;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.card ul li {
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #1f1e1eff;
+  transition: color 0.3s;
+}
+
+.check-icon {
+    color: #6264e9ff;          
+  margin-right: 4px;       
+  font-size: 0.9rem;       
+  vertical-align: middle;  
+  transition: color 0.3s;
+}
+.card:hover .check-icon {
+  color: #000;
+}
+
+/* BUTTON STYLE */
+.card button {
+  background: #f5b800;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover button {
+  background: #ffffff;
+  color: #000;
+}
+
+.card:hover h3,
+.card:hover h1,
+.card:hover p,
+.card:hover ul li {
+  color: #000;
+}
+
+/* RESPONSIVE DESIGN */
+/* @media (max-width: 1024px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-page {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-page {
+    padding: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .pricing-header h2 {
+    font-size: 1.8rem;
+  }
+} */
+
+/* ===========================
+LARGE SCREENS / SMALL LAPTOPS (≤ 1200px)
+=========================== */
+@media (max-width: 1200px) {
+  .pricing-page {
+    padding: 3rem 4rem;
+    background-attachment: scroll; /* smoother performance */
+  }
+
+  .intro {
+    font-size: 1.3rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .pricing-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+
+/* ===========================
+ TABLETS (≤ 992px)
+=========================== */
+@media (max-width: 992px) {
+  .pricing-page {
+    padding: 2.5rem 2.5rem;
+  }
+
+  .pricing-header {
+    text-align: center;
+  }
+
+  .pricing-header h2 {
+    font-size: 2rem;
+  }
+
+  .intro,
+  .desc {
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  .card ul {
+    text-align: center;
+  }
+}
+
+
+/* ===========================
+ MOBILE DEVICES (≤ 768px)
+=========================== */
+@media (max-width: 768px) {
+  .pricing-page {
+    padding: 2rem 1.5rem;
+    margin-top: 12rem;
+  }
+
+  .pricing-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .pricing-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.3rem;
+  }
+
+  .card h1 {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+}
+
+
+/* ===========================
+ SMALL PHONES (≤ 480px)
+=========================== */
+@media (max-width: 480px) {
+  .pricing-page {
+    padding: 1.5rem 1rem;
+    margin-top: 14rem;
+  }
+
+  .pricing-header h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .breadcrumb {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .intro {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .desc {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card h1 {
+    font-size: 1.8rem;
+  }
+
+  .card button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ===========================
+ EXTRA SMALL DEVICES (≤ 360px)
+=========================== */
+@media (max-width: 360px) {
+  .pricing-page {
+    padding: 1rem 0.8rem;
+  }
+
+  .pricing-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  .desc {
+    font-size: 0.8rem;
+  }
+
+  .card h1 {
+    font-size: 1.6rem;
+  }
+
+  .card button {
+    width: 100%;
+  }
+}

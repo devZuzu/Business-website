@@ -1,0 +1,293 @@
+.product-page {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1500px; 
+  margin-top: 4rem;
+  background: url("src/assets/contact2-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+   padding: 3rem 6rem;
+   min-height: 100vh;
+}
+.product-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 155%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1; 
+} 
+
+header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.breadcrumb {
+  color: gray;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #0f0f0fff;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.header-p {
+    margin-top: 2.5rem;
+    line-height: 1.5;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  justify-content: left; 
+  align-items: center; 
+  width: 100%;
+  max-width: 1000px;
+  gap: -5px;
+}
+
+.product-card {
+  border: none;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* .product-card:hover {
+  transform: translateY(-5px);
+  border-color: #f4c430;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+} */
+
+.card-placeholder {
+  background: #817c7cff;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.product-card:hover .card-placeholder {
+  background: #f4c430;
+}
+
+.card-placeholder span {
+  font-size: 3rem;
+}
+
+.product-card h3 {
+    background: #fff;
+    padding: 10px;
+    margin-top: -1rem;
+  color: #333;
+  
+}
+
+.product-card p {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* media queries */
+/* ===========================
+LARGE SCREENS / SMALL LAPTOPS (≤ 1200px)
+=========================== */
+@media (max-width: 1200px) {
+  .product-page {
+    padding: 3rem 4rem;
+    background-attachment: scroll; /* improves performance */
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .header-p {
+    font-size: 1rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+}
+
+
+/* ===========================
+TABLETS (≤ 992px)
+=========================== */
+@media (max-width: 992px) {
+  .product-page {
+    padding: 2.5rem 3rem;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .header-p {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+}
+
+
+/* ===========================
+TABLETS / LARGE PHONES (≤ 768px)
+=========================== */
+@media (max-width: 768px) {
+  .product-page {
+    padding: 2rem 1.5rem;
+    margin-top: 3rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .header-p {
+    font-size: 0.9rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    padding: 1rem;
+  }
+
+  .card-placeholder {
+    height: 180px;
+  }
+
+  .card-placeholder span {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* ===========================
+SMALL PHONES (≤ 480px)
+=========================== */
+@media (max-width: 480px) {
+  .product-page {
+    padding: 1.5rem 1rem;
+    margin-top: 15rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .breadcrumb {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.15rem;
+  }
+
+  .header-p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product-card {
+    padding: 0.8rem;
+  }
+
+  .card-placeholder {
+    height: 160px;
+  }
+
+  .product-card h3 {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ===========================
+EXTRA SMALL DEVICES (≤ 360px)
+=========================== */
+@media (max-width: 360px) {
+  .product-page {
+    padding: 1rem 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .header-p {
+    font-size: 0.8rem;
+  }
+
+  .card-placeholder {
+    height: 140px;
+  }
+
+  .card-placeholder span {
+    font-size: 2rem;
+  }
+
+  .product-card h3 {
+    font-size: 0.9rem;
+  }
+}

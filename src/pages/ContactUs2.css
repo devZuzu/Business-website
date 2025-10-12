@@ -1,0 +1,302 @@
+.contact2-page {
+  min-height: 100vh;
+  background: url("src/assets/contact2-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin-top: 3.5rem;
+}
+.contact2-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1; 
+}    
+.contact2-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; 
+}
+
+.contact2-header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.contact2-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact2-header 
+.breadcrumb {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.intro-text {
+  text-align: left;
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+}
+
+.intro-text span {
+  text-decoration: underline  yellow;
+  font-weight: 600;
+}
+
+.contact2-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact2-info,
+.contact2-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact2-info h2,
+.contact2-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.info-desc {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.info-block p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.contact2-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-yellow {
+  background: #f7c600;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background: #ffdd33;
+}
+
+.btn-link {
+  background: none;
+  color: #131312ff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contact2-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+textarea {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  justify-content: flex-start;
+  align-items: left;
+  
+}
+
+.submit-btn {
+  margin-top: 10px;
+  width: fit-content;
+}
+
+/* ===========================
+   LARGE TABLETS & SMALL LAPTOPS (≤ 992px)
+   =========================== */
+@media (max-width: 992px) {
+  .contact2-page {
+    padding: 50px 30px;
+    background-attachment: scroll; 
+  }
+
+  .contact2-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact2-info,
+  .contact2-form {
+    width: 100%;
+  }
+
+  .contact2-header h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .info-desc {
+    font-size: 0.95rem;
+  }
+
+  .btn-yellow,
+  .btn-link {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ===========================
+   TABLETS (≤ 768px)
+   =========================== */
+@media (max-width: 768px) {
+  .contact2-page {
+    padding: 40px 20px;
+  }
+
+  .contact2-header {
+    text-align: center;
+  }
+
+  .contact2-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact2-header .breadcrumb {
+    font-size: 0.85rem;
+  }
+
+  .intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact2-content {
+    gap: 35px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 140px;
+  }
+
+  .btn-yellow,
+  .btn-link,
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* ===========================
+ SMALL PHONES (≤ 480px)
+   =========================== */
+@media (max-width: 480px) {
+  .contact2-page {
+    padding: 30px 15px;
+    margin-top: 13rem;
+  }
+
+  .contact2-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .intro-text {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .info-block p {
+    font-size: 0.9rem;
+  }
+
+  .contact2-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-yellow,
+  .btn-link {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 12px 0;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
+
+
+/* ===========================
+ EXTRA SMALL DEVICES (≤ 360px)
+   =========================== */
+@media (max-width: 360px) {
+  .contact2-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-yellow,
+  .btn-link {
+    font-size: 0.85rem;
+  }
+}

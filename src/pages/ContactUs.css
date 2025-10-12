@@ -1,0 +1,274 @@
+.contact-page {
+  font-family: 'Roboto', sans-serif;
+  padding: 4rem 6rem;
+  color: #222;
+  background-color: #fff;
+  margin-top: 4rem;
+  background-image: url('../assets/about-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.contact-intro {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+  border-color: #ffcc00;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease; 
+}
+
+.yellow-btn {
+  background-color: #ffcc00;
+  color: #000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.yellow-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  margin-left: 3px;
+  color: #0f0f0fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* ============================= */
+/* Large Tablets (≤1200px) */
+/* ============================= */
+@media (max-width: 1200px) {
+  .contact-page {
+    padding: 3rem 4rem;
+    background-attachment: scroll; /* smoother on tablets */
+  }
+
+  .contact-intro {
+    font-size: 1.8rem;
+  }
+
+  .contact-card {
+    padding: 1.8rem;
+  }
+
+  .contact-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================= */
+/* Tablets (≤992px) */
+/* ============================= */
+@media (max-width: 992px) {
+  .contact-page {
+    padding: 2.5rem;
+  }
+
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-intro {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+}
+
+/* ============================= */
+/* Large Mobile (≤768px) */
+/* ============================= */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.85rem;
+  }
+
+  .contact-intro {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* ============================= */
+/* Small Mobile (≤480px) */
+/* ============================= */
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 1.5rem;
+    margin-top: 14rem;
+  }
+
+  .contact-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .contact-intro {
+    font-size: 1.2rem;
+  }
+
+  .contact-card h3 {
+    font-size: 1rem;
+  }
+
+  .contact-details p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  .link {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================= */
+/* Extra Small Devices (≤360px) */
+/* ============================= */
+@media (max-width: 360px) {
+  .contact-page {
+    padding: 1rem;
+    margin-top: 12rem;
+  }
+
+  .contact-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .contact-intro {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+  }
+}

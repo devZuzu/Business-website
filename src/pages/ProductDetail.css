@@ -1,0 +1,554 @@
+.product-detail-page {
+  font-family: "Roboto", sans-serif;
+ background: url("src/assets/contact2-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  color: #333;
+   padding: 3rem 6rem;
+  max-width: 1400px;
+  margin-top: 4rem;
+}
+.product-detail-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 175%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1; 
+} 
+
+/* Header */
+.product-header {
+  margin-bottom: 1.5rem;
+}
+
+.product-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Intro */
+.intro-text {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+}
+
+.intro-text span {
+  /* color: #f4a261; */
+  /* font-weight: 500; */
+  text-decoration: underline #f4cd61ff;
+}
+
+.intro-paragraph {
+    font-size: 1rem;
+  line-height: 1.5;
+  /* margin-bottom: 2rem; */
+  /* max-width: 1200px; */
+}
+
+/* Layout */
+.product-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.product-image {
+  flex: 1.3;
+}
+
+.image-box {
+  background: #d9d9d9;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.image-overlay {
+    color: white;
+}
+
+.image-icon {
+    color: #fff;
+}
+
+/* Contact */
+.contact-section {
+  flex: 1;
+ /*  background: #f8f8f8;
+  border-left: 3px solid #f4a261; */
+  padding: 1.2rem;
+  margin-left: 5rem;
+ /*  border-radius: 6px; */
+}
+
+.contact-section h3 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-section p {
+  margin: 0.4rem 0;
+  font-size: 0.90rem;
+}
+
+.icon {
+    font-size: 2rem;
+  margin-right: 8px;
+  color: #030303ff;
+}
+
+/* Meeting box */
+.meeting-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #f4a261;
+  border-bottom: 5px solid #f4a261;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-top: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.meeting-box:hover {
+  background: #f4a261;
+  color: #fff;
+}
+
+.meeting {
+    margin-right: 3rem;
+}
+.calendar-icon {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+
+}
+
+.dot {
+    color: #20e2a1ff;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  /* border-bottom: 2px solid #ddd; */
+  margin: 2rem auto 0 auto;
+  padding-bottom: 0.8rem;
+  flex-wrap: wrap;
+  max-width: 100%; /* default full width */
+  width: 100%;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #555;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+.tabs button:hover {
+
+   background: #dfb015ef;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* .tabs .active {
+  background: #f4a261;
+  color: #fff;
+  border-radius: 4px;
+} */
+
+.download {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Info */
+.product-info {
+  margin-top: 2rem;
+  max-width: 800px;
+}
+
+.product-info h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.product-info p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.product-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-info li {
+  margin-bottom: 0.5rem;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Actual image */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3; /* Dim background so overlay is visible */
+}
+
+/* Overlay icon + text */
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #555;
+}
+
+.image-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #888;
+}
+
+/* Dots navigation */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot:hover {
+  background: #999;
+}
+
+.active-dot {
+  background: #f4a261;
+}
+
+
+/* Responsive */
+/* @media (max-width: 900px) {
+  .product-layout {
+    flex-direction: column;
+  }
+
+  .contact-section {
+    margin-top: 1.5rem;
+  }
+}
+ */
+
+ /* ===============================
+ 💻 LARGE SCREENS / SMALL LAPTOPS (≤ 1200px)
+=============================== */
+@media (max-width: 1200px) {
+  .product-detail-page {
+    padding: 3rem 4rem;
+    background-attachment: scroll; /* improves performance on laptops */
+  }
+
+  .intro-text {
+    font-size: 1.5rem;
+  }
+
+  .product-layout {
+    gap: 1.5rem;
+  }
+
+  .contact-section {
+    margin-left: 3rem;
+  }
+
+  .tabs button {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ===============================
+ 💻 TABLETS (≤ 992px)
+=============================== */
+@media (max-width: 992px) {
+  .product-detail-page {
+    padding: 2.5rem 3rem;
+  }
+
+  .product-header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .breadcrumb {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .intro-text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .intro-paragraph {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .product-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .product-image {
+    width: 90%;
+  }
+
+  .contact-section {
+    width: 90%;
+    margin: 2rem auto 0;
+    text-align: left;
+  }
+
+  .meeting-box {
+    justify-content: center;
+  }
+
+  .product-info {
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+
+  .tabs {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tabs button {
+    font-size: 0.95rem;
+    margin: 0.3rem;
+  }
+}
+
+
+/* ===============================
+ 📱 LARGE PHONES / SMALL TABLETS (≤ 768px)
+=============================== */
+@media (max-width: 768px) {
+  .product-detail-page {
+    padding: 2rem 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .product-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  .intro-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .image-box {
+    height: 250px;
+  }
+
+  .contact-section {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .meeting-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .meeting {
+    margin-right: 0;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs button {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .product-info {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .slider {
+    height: 250px;
+  }
+}
+
+
+/* ===============================
+ 📱 SMALL PHONES (≤ 480px)
+=============================== */
+@media (max-width: 480px) {
+  .product-detail-page {
+    padding: 1.5rem 1rem;
+    margin-top: 14rem;
+  }
+
+  .product-header h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .intro-paragraph {
+    font-size: 0.85rem;
+  }
+
+  .product-layout {
+    gap: 1.5rem;
+  }
+
+  .image-box {
+    height: 200px;
+  }
+
+  .product-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .product-info p {
+    font-size: 0.9rem;
+  }
+
+  .contact-section {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .tabs button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .slider {
+    height: 200px;
+  }
+
+  .image-icon {
+    font-size: 2.2rem;
+  }
+}
+
+
+/* ===============================
+ 📱 EXTRA SMALL DEVICES (≤ 360px)
+=============================== */
+@media (max-width: 360px) {
+  .product-detail-page {
+    padding: 1rem 0.8rem;
+  }
+
+  .product-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .intro-paragraph {
+    font-size: 0.8rem;
+  }
+
+  .image-box {
+    height: 180px;
+  }
+
+  .contact-section h3 {
+    font-size: 0.9rem;
+  }
+
+  .tabs button {
+    font-size: 0.85rem;
+  }
+
+  .slider {
+    height: 180px;
+  }
+}
