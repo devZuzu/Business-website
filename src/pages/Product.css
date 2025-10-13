@@ -222,22 +222,22 @@ SMALL PHONES (≤ 480px)
 
   header h1 {
     font-size: 1.4rem;
-    text-align: center;
+    text-align: left;
   }
 
   .breadcrumb {
-    text-align: center;
+    text-align: left;
     font-size: 0.85rem;
   }
 
   .subtitle {
-    text-align: center;
+    text-align: left;
     font-size: 1.15rem;
   }
 
   .header-p {
     font-size: 0.85rem;
-    text-align: center;
+    text-align: left;
   }
 
   .product-grid {
