@@ -458,39 +458,39 @@
 
 
 /* ===============================
- 📱 SMALL PHONES (≤ 480px)
+ SMALL PHONES (≤ 480px)
 =============================== */
 @media (max-width: 480px) {
   .product-detail-page {
-    padding: 1.5rem 1rem;
-    margin-top: 14rem;
+    padding: 1.5rem 0.5rem;
+    margin-top: 9rem;
   }
 
   .product-header h1 {
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 1.2rem;
+    text-align: left;
   }
 
   .breadcrumb {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     text-align: center;
   }
 
   .intro-text {
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 1rem;
+    text-align: left;
   }
 
   .intro-paragraph {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .product-layout {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .image-box {
-    height: 200px;
+    height: 180px;
   }
 
   .product-info h2 {
@@ -498,7 +498,10 @@
   }
 
   .product-info p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+  }
+  .product-info li {
+    font-size: 0.75rem;
   }
 
   .contact-section {
@@ -512,17 +515,17 @@
   }
 
   .slider {
-    height: 200px;
+    height: 180px;
   }
 
   .image-icon {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 }
 
 
 /* ===============================
- 📱 EXTRA SMALL DEVICES (≤ 360px)
+ EXTRA SMALL DEVICES (≤ 360px)
 =============================== */
 @media (max-width: 360px) {
   .product-detail-page {
