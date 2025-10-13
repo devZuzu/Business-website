@@ -217,22 +217,22 @@ SMALL PHONES (≤ 480px)
 @media (max-width: 480px) {
   .product-page {
     padding: 1.5rem 1rem;
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
 
   header h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: left;
   }
 
   .breadcrumb {
     text-align: left;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
   }
 
   .subtitle {
     text-align: left;
-    font-size: 1.15rem;
+    font-size: 0.9rem;
   }
 
   .header-p {
@@ -254,7 +254,7 @@ SMALL PHONES (≤ 480px)
   }
 
   .product-card h3 {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 }
 
