@@ -299,7 +299,7 @@
  */
 
  /* ===============================
- 💻 LARGE SCREENS / SMALL LAPTOPS (≤ 1200px)
+ LARGE SCREENS / SMALL LAPTOPS (≤ 1200px)
 =============================== */
 @media (max-width: 1200px) {
   .product-detail-page {
@@ -326,7 +326,7 @@
 
 
 /* ===============================
- 💻 TABLETS (≤ 992px)
+  TABLETS (≤ 992px)
 =============================== */
 @media (max-width: 992px) {
   .product-detail-page {
@@ -391,7 +391,7 @@
 
 
 /* ===============================
- 📱 LARGE PHONES / SMALL TABLETS (≤ 768px)
+  LARGE PHONES / SMALL TABLETS (≤ 768px)
 =============================== */
 @media (max-width: 768px) {
   .product-detail-page {
@@ -401,6 +401,10 @@
 
   .product-header h1 {
     font-size: 1.6rem;
+    text-align: left;
+  }
+  .breadcrumb {
+    text-align: left;
   }
 
   .intro-text {
@@ -409,6 +413,7 @@
 
   .intro-paragraph {
     font-size: 0.9rem;
+    text-align: left;
   }
 
   .image-box {
