@@ -111,7 +111,8 @@
 /* === HAMBURGER === */
 .menu-toggle {
   display: none;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  align-items: right;
   background: none;
   border: none;
   color: #333;
@@ -119,59 +120,87 @@
 }
 
 /* ========================
-   MOBILE VIEW (≤768px)
+   MEDIA QUERIES
 ======================== */
+
+/* --- Medium Screens (≤1024px) --- */
+@media (max-width: 1024px) {
+  .top-navbar {
+    padding: 0.6rem 1.5rem;
+  }
+
+  .main-navbar {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .top-center .top-logo {
+    font-size: 1.4rem;
+  }
+}
+
+/* --- Tablet View (≤768px) --- */
 @media (max-width: 768px) {
   /* Top Navbar */
   .top-navbar {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    top: 0;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 0.8rem 1rem;
-    gap: 0.6rem;
-    background: #fff; /* make sure it’s visible */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background: #fff;
+  }
+
+  .top-left,
+  .top-right {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .top-right {
-    flex-direction: column;
-    gap: 0.4rem;
+    flex-direction: row;
+    gap: 0.5rem;
   }
 
   /* Main Navbar */
   .main-navbar {
+    flex-direction: column;
     position: fixed;
-    top: 120px; /* increased to sit below expanded top navbar */
+    top: 110px; /* below stacked top navbar */
     width: 100%;
     background: #fff;
     z-index: 999;
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
 
-  /* Toggle Icon */
+  /* Show Hamburger */
   .menu-toggle {
     display: block;
-    font-size: 1.6rem;
-    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 1rem;
+    font-size: 1.8rem;
     z-index: 1001;
   }
 
-  /* Nav Links Dropdown */
+  /* Hide Nav Links by default */
   .nav-links {
     position: absolute;
-    top: 60px; /* below the toggle button */
+    top: 60px;
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: #fff;
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
+    background: #fff;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -184,25 +213,68 @@
 
   .nav-links a {
     font-size: 1rem;
-    padding: 0.5rem 0;
     width: 100%;
     text-align: center;
   }
 }
 
-/* ========================
-   SMALL MOBILE (≤480px)
-======================== */
+/* --- Small Mobile (≤480px) --- */
 @media (max-width: 480px) {
+    .top-left {
+        display: none;
+    }
   .top-center .top-logo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .main-navbar {
-    top: 135px; /* slightly more space for small screens */
+    margin-top: -2rem;
+    /* top: 125px;
+    padding: 0.5rem 1rem; */
   }
 
   .menu-toggle {
     font-size: 1.5rem;
+  }
+  .nan-links {
+    margin-top: -5rem;
+  }
+
+  .nav-links a {
+    width: 50%;
+    font-size: 0.6rem;
+  }
+
+  .language-selector span {
+    display: none; /* hide text beside flag to save space */
+  }
+}
+
+/* --- Extra Small (≤360px) --- */
+@media (max-width: 360px) {
+  .top-navbar {
+    padding: 0.5rem;
+  }
+  .top-right {
+    display: none;
+  }
+
+  .main-navbar {
+    margin-top: 10rem;
+    padding: 0.5rem 0.5rem;
+    /* top: 130px; */
+  }
+
+  .menu-toggle {
+    font-size: 1rem;
+  }
+
+  .top-left {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .social-icons {
+    gap: 0.5rem;
   }
 }
