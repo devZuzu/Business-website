@@ -117,7 +117,7 @@
 }
 
 /* responsive design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
@@ -141,4 +141,123 @@
         gap: 1rem;
     }
 }
-    
+     */
+
+ /* ========================
+   MEDIA QUERIES
+======================== */
+
+/* --- Laptop (≤ 1024px) --- */
+/* @media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        margin-left: 0;
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .hero-image img {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+} */
+
+/* --- Tablet (≤ 768px) --- */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 1rem;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+}
+
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+        background-position: center;
+        background-size: contain; 
+        justify-content: left;
+        align-items: left;
+        text-align: left;  
+    }
+
+
+    .hero-content{
+        margin-top: 5.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .hero-title {
+        font-size: 1rem;
+        line-height: 1;
+        margin-top: 5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        margin: 1rem 0;
+    }
+
+    .hero-button {
+        width: 100%;
+        padding: 0.6rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        
+    }
+}    
