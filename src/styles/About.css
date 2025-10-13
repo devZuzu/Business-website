@@ -296,7 +296,7 @@
   }
 
   .about-section-title {
-    font-size: 1rem;
+    font-size: 0.85rem;
     text-align: center;
   }
 
@@ -307,14 +307,15 @@
   }
 
   .about-description {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
   }
 
   .about-stats {
     grid-template-columns: 1fr;
     gap: 1rem;
+    align-items: center;
   }
 
   .stat-card {
@@ -348,20 +349,21 @@
 /* ---------- Small Mobile (max-width: 480px) ---------- */
 @media (max-width: 480px) {
   .about-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .about-description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .about-button {
     padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .stat-label, .stat-description {
     font-size: 0.9rem;
+    align-items: center;
   }
 
   .footer-icon-label {
