@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1 className="hero-content">
+        <h1 className="hero-title">
           We make Filling & Packaging<br /> Machine for <span className="highlight">Food Industry</span>
         </h1>
         <p className="hero-subtitle">
