@@ -286,36 +286,68 @@
 @media (max-width: 480px) {
   .about-page {
     padding: 1rem;
-    text-align: center;
-    margin-top: 12rem;
+    margin-top: 8rem;
   }
 
   .about-intro h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    text-align: left;
   }
 
   .about-intro h2 {
-    font-size: 1.2rem;
+    font-size: 0.85rem;
+    text-align: left;
   }
 
   .about-intro p {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
+    text-align: left;
+  }
+
+  .values-text h3 {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
   }
 
   .values-text h2 {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
+    text-align: left;
   }
 
   .values-text p {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
+    text-align: left;
+  }
+
+  .text-link {
+    margin-top: 1.4rem;
   }
 
   .card {
     padding: 0.8rem;
   }
 
+  .about-partners h3 {
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  .partners-text h2 {
+    text-align: left;
+    font-size: 0.85rem;
+  }
+  .partners-text-para {
+    font-size: 0.65rem;
+    align-items: left;
+    text-align: left;
+  }
+
+.partners-text-para span {
+  font-size: 0.67rem;
+}
   .partners-logos {
     gap: 0.5rem;
+    margin-bottom: -2rem;
+    font-size: 0.75rem;
   }
 
   .partners-logos img {
