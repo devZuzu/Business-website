@@ -249,11 +249,12 @@ textarea {
 @media (max-width: 480px) {
   .contact2-page {
     padding: 30px 15px;
-    margin-top: 13rem;
+    margin-top: 9rem;
   }
 
   .contact2-header h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    text-align: left;
   }
 
   .intro-text {
@@ -261,24 +262,32 @@ textarea {
     margin-bottom: 1.8rem;
   }
 
+  .contact2-content h2 {
+    font-size: 1rem;
+  }
+
+  .info-desc {
+    font-size: 0.75rem;
+  }
+
   .info-block p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .contact2-buttons {
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
   }
 
   .btn-yellow,
   .btn-link {
     width: 100%;
-    font-size: 0.9rem;
-    padding: 12px 0;
+    font-size: 0.83rem;
+    padding: 10px 0;
   }
 
   textarea {
-    height: 120px;
+    height: 100px;
   }
 }
 
