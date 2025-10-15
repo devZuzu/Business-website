@@ -72,7 +72,7 @@ const NewsDetail = () => {
       {/* Related News Section */}
       <div className="related-section">
         <div className="news-container">
-          <h2 className="related-title">Related News</h2>
+          <h2 className="news-title">Related News</h2>
           <h3 className="news_contents">Cake pudding lollipop pastry cupcake chocolate. Gummi bears halvah sesame snaps chocolate cake gummies sugar plum cotton candy cupcake sweet</h3>
 
           <div className="related-grid">
