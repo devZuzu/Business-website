@@ -175,25 +175,25 @@
 
 
 /* ===========================
-   📱 SMALL PHONES (≤ 480px)
+   SMALL PHONES (≤ 480px)
    =========================== */
 @media (max-width: 480px) {
   .news-page {
     padding: 1.5rem 1rem;
-    margin-top: 13rem;
+    margin-top: 10rem;
   }
 
   .news-header {
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
   }
 
   .news-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .news-header p {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .news-card {
@@ -208,22 +208,25 @@
 
   .news-content {
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .news-content h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .news-content p {
+    font-size: 0.75rem;
   }
 
   .read-more {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 0.7rem;
   }
 }
 
 
 /* ===========================
-   📱 EXTRA SMALL DEVICES (≤ 360px)
+    EXTRA SMALL DEVICES (≤ 360px)
    =========================== */
 @media (max-width: 360px) {
   .news-header h1 {
